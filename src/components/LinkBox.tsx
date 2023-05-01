@@ -10,14 +10,12 @@ export const LinkBox = (
     }
 ) => {
     return (
-        <div
-            className={`m-2 rounded-2xl bg-[#ffffff1a] px-4 py-4 shadow-md ring-1 ring-inset ring-[#ffffff1a] backdrop-blur-sm transition-colors duration-300 ease-in-out hover:bg-[#ffffff20] ${
-                props.center ? "items-center" : ""
-            }`}
-        >
+        <div className="m-2 rounded-2xl bg-[#ffffff1a] px-4 py-4 shadow-md ring-1 ring-inset ring-[#ffffff1a] backdrop-blur-sm transition-colors duration-300 ease-in-out hover:bg-[#ffffff20]">
             <div className="box-border border-0 border-solid">
                 <h3
-                    className="text-2xl font-bold text-neutral-300"
+                    className={`text-2xl font-bold text-neutral-300 ${
+                        props.center ? "ml-auto mr-auto text-center" : ""
+                    }`}
                     style={{ color: props.color }}
                 >
                     {props.href ? (
