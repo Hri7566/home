@@ -11,7 +11,7 @@ export const LinkBox = (
 ) => {
     return (
         <div
-            className={`m-2 rounded-2xl bg-[#ffffff1a] px-4 py-4 shadow-md ring-1 ring-inset ring-[#ffffff1a] transition-colors duration-300 ease-in-out hover:bg-[#ffffff20] ${
+            className={`m-2 rounded-2xl bg-[#ffffff1a] px-4 py-4 shadow-md ring-1 ring-inset ring-[#ffffff1a] backdrop-blur-sm transition-colors duration-300 ease-in-out hover:bg-[#ffffff20] ${
                 props.center ? "items-center" : ""
             }`}
         >

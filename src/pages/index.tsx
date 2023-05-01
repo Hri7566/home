@@ -13,21 +13,22 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main
-                className="min-h-screen overflow-y-scroll bg-black text-white backdrop-blur sm:w-full"
+                className="min-h-screen overflow-y-scroll bg-black bg-scroll text-white backdrop-blur sm:w-full"
                 style={{
-                    fontFamily: `"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif`
+                    fontFamily: `"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif`,
+                    backgroundImage: `url("/cat.jpg")`
                 }}
             >
-                <img
+                {/* <img
                     src="/cat.jpg"
                     alt="Cat"
-                    className="absolute inset-0 -z-20 h-full w-full object-cover"
-                />
+                    className="absolute inset-0 top-0 -z-20 h-full w-full object-cover"
+                /> */}
                 <div className="absolute inset-0 -z-10 min-h-full w-full overflow-y-scroll bg-[#00000070] object-cover" />
 
                 <MainHeader />
 
-                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg">
+                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm">
                     Links
                 </h1>
                 <div id="links" className="mx-5 my-3 grid grid-cols-1 sm:flex">
@@ -63,7 +64,7 @@ const Home: NextPage = () => {
                     />
                 </div>
 
-                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg">
+                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm">
                     Projects
                 </h1>
                 <div
@@ -73,7 +74,6 @@ const Home: NextPage = () => {
                     <LinkBox
                         title="mpp-user-archive"
                         href="https://github.com/Hri7566/mpp-user-archive"
-                        color="#606060"
                     >
                         Multiplayer Piano database service monorepo. This
                         project took over a month to make.
@@ -93,14 +93,13 @@ const Home: NextPage = () => {
                         A clone of Multiplayer Piano with a completely original
                         backend server with a fresh style.
                     </LinkBox>
-                    <LinkBox title="Khorne Bot">
+                    <LinkBox title="Khorne Bot" color="#900000">
                         Discord bot in collaboration with Khorne. Closed source
                         and currently under development.
                     </LinkBox>
                     <LinkBox
                         title="MPPClone Frontend"
                         href="https://github.com/LapisHusky/mppclone"
-                        color="#0030ff"
                     >
                         I made some contributions to this site, such as the
                         ability to hide cursors and code block CSS.
@@ -110,10 +109,10 @@ const Home: NextPage = () => {
                         href="https://mario.hri7566.info"
                     >
                         Mirror of BopItFreak's Mario site. Give it a minute to
-                        load. Audio doesn't like to work.
+                        load. Audio doesn't like to work sometimes.
                     </LinkBox>
                 </div>
-                <footer className="fixed bottom-0 left-0 z-20 w-full border-t border-[#ffffff1a] bg-[#ffffff1a] p-4 text-lg">
+                <footer className="fixed bottom-0 left-0 z-20 w-full border-t border-[#ffffff1a] bg-[#ffffff1a] p-4 text-lg backdrop-blur-sm">
                     &copy; Hri7566 2023 All rights reserved
                 </footer>
             </main>

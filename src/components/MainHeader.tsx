@@ -4,7 +4,7 @@ export const MainHeader = () => {
     return (
         <div
             id="header"
-            className="sticky top-0 z-[100] h-24 border-b border-[#ffffff1a] bg-[#ffffff1a] p-3"
+            className="sticky top-0 z-[100] h-24 border-b border-[#ffffff1a] bg-[#ffffff1a] p-3 backdrop-blur-sm"
         >
             <Link href="/" className="float-left flex cursor-pointer items-end">
                 <img
