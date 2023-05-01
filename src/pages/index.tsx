@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main
-                className="min-h-screen overflow-y-scroll bg-black bg-scroll text-white backdrop-blur sm:w-full"
+                className="min-h-screen overflow-y-scroll bg-black bg-scroll bg-center text-white backdrop-blur sm:w-full"
                 style={{
                     fontFamily: `"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif`,
                     backgroundImage: `url("/cat.jpg")`
