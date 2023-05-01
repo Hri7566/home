@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { MainHeader } from "~/components/MainHeader";
 import { LinkBox } from "~/components/LinkBox";
+import { PageBreak } from "~/components/PageBreak";
 
 const Home: NextPage = () => {
     return (
@@ -23,90 +24,94 @@ const Home: NextPage = () => {
 
                 <MainHeader />
 
-                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm">
-                    Links
-                </h1>
-                <div id="links" className="mx-5 my-3 grid grid-cols-1 sm:flex">
-                    <LinkBox
-                        title="GitHub"
-                        href="https://github.com/Hri7566"
-                        center
-                        color="#ffffff"
-                    />
-                    <LinkBox
-                        title="GitLab"
-                        href="https://gitlab.com/Hri7566"
-                        center
-                        color="#ffffff"
-                    />
-                    <LinkBox
-                        title="Twitter"
-                        href="https://twitter.com/Hri7566"
-                        center
-                        color="#ffffff"
-                    />
-                    <LinkBox
-                        title="YouTube"
-                        href="https://youtube.com/hri7566"
-                        center
-                        color="#ffffff"
-                    />
-                    <LinkBox
-                        title="Odysee"
-                        href="https://odysee.com/@hri7566:6"
-                        center
-                        color="#ffffff"
-                    />
+                <PageBreak>Links</PageBreak>
+                <div className="ml-auto mr-auto w-2/3 items-center">
+                    <div
+                        id="links"
+                        className="mx-5 my-3 grid grid-cols-1 items-center justify-evenly sm:flex"
+                    >
+                        <LinkBox
+                            title="GitHub"
+                            href="https://github.com/Hri7566"
+                            center
+                            color="#ffffff"
+                        />
+                        <LinkBox
+                            title="GitLab"
+                            href="https://gitlab.com/Hri7566"
+                            center
+                            color="#ffffff"
+                        />
+                        <LinkBox
+                            title="Twitter"
+                            href="https://twitter.com/Hri7566"
+                            center
+                            color="#ffffff"
+                        />
+                        <LinkBox
+                            title="YouTube"
+                            href="https://youtube.com/hri7566"
+                            center
+                            color="#ffffff"
+                        />
+                        <LinkBox
+                            title="Odysee"
+                            href="https://odysee.com/@hri7566:6"
+                            center
+                            color="#ffffff"
+                        />
+                    </div>
                 </div>
 
-                <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm">
-                    Projects
-                </h1>
-                <div
-                    id="projects"
-                    className="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-3"
-                >
-                    <LinkBox
-                        title="mpp-user-archive"
-                        href="https://github.com/Hri7566/mpp-user-archive"
+                <PageBreak>Projects</PageBreak>
+                <div className="ml-auto mr-auto w-2/3">
+                    <div
+                        id="projects"
+                        className="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-2"
                     >
-                        Multiplayer Piano database service monorepo. This
-                        project took over a month to make.
-                    </LinkBox>
-                    <LinkBox
-                        title="Cosmic"
-                        href="https://github.com/Hri7566/cosmic"
-                        color="#1d0054"
-                    >
-                        Bot for Discord and MPP. Lots of baking involved.
-                    </LinkBox>
-                    <LinkBox
-                        title="mpp.hri7566.info"
-                        href="https://mpp.hri7566.info"
-                        color="#8d3f50"
-                    >
-                        A clone of Multiplayer Piano with a completely original
-                        backend server with a fresh style.
-                    </LinkBox>
-                    <LinkBox title="Khorne Bot" color="#900000">
-                        Discord bot in collaboration with Khorne. Closed source
-                        and currently under development.
-                    </LinkBox>
-                    <LinkBox
-                        title="MPPClone Frontend"
-                        href="https://github.com/LapisHusky/mppclone"
-                    >
-                        I made some contributions to this site, such as the
-                        ability to hide cursors and code block CSS.
-                    </LinkBox>
-                    <LinkBox
-                        title="Super Mario 64 in a Browser"
-                        href="https://mario.hri7566.info"
-                    >
-                        Mirror of BopItFreak's Mario site. Give it a minute to
-                        load. Audio doesn't like to work sometimes.
-                    </LinkBox>
+                        <LinkBox
+                            title="mpp-user-archive"
+                            href="https://github.com/Hri7566/mpp-user-archive"
+                        >
+                            Multiplayer Piano database service monorepo. This
+                            project took over a month to make.
+                        </LinkBox>
+                        <LinkBox
+                            title="Cosmic"
+                            href="https://github.com/Hri7566/cosmic"
+                            color="#1d0054"
+                        >
+                            Bot for Discord and MPP. Lots of baking involved.
+                        </LinkBox>
+                        <LinkBox
+                            title="mpp.hri7566.info"
+                            href="https://mpp.hri7566.info"
+                            color="#8d3f50"
+                        >
+                            A clone of Multiplayer Piano with a completely
+                            original backend server with a fresh style.
+                        </LinkBox>
+                        <LinkBox title="Khorne Bot" color="#900000">
+                            Discord bot in collaboration with Khorne. Closed
+                            source and currently under development.
+                        </LinkBox>
+                        <LinkBox
+                            title="MPPClone Frontend"
+                            href="https://github.com/LapisHusky/mppclone"
+                        >
+                            I made some contributions to this site, such as the
+                            ability to hide cursors and code block CSS.
+                        </LinkBox>
+                        <LinkBox
+                            title="Super Mario 64 in a Browser"
+                            href="https://mario.hri7566.info"
+                        >
+                            Mirror of BopItFreak's Mario site. Give it a minute
+                            to load. Audio doesn't like to work sometimes.
+                        </LinkBox>
+                    </div>
                 </div>
+
                 <footer className="fixed bottom-0 left-0 z-20 w-full border-t border-[#ffffff1a] bg-[#ffffff1a] p-4 text-lg backdrop-blur-sm">
                     &copy; Hri7566 2023 All rights reserved
                 </footer>

@@ -16,7 +16,10 @@ export const LinkBox = (
             }`}
         >
             <div className="box-border border-0 border-solid">
-                <h3 className="text-2xl font-bold text-neutral-300">
+                <h3
+                    className="text-2xl font-bold text-neutral-300"
+                    style={{ color: props.color }}
+                >
                     {props.href ? (
                         <Link
                             href={props.href}
