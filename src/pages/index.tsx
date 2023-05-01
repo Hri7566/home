@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main
-                className="min-h-screen bg-black text-white backdrop-blur"
+                className="min-h-screen overflow-y-scroll bg-black text-white backdrop-blur sm:w-full"
                 style={{
                     fontFamily: `"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif`
                 }}
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                 <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg">
                     Links
                 </h1>
-                <div id="links" className="mx-5 my-3 flex">
+                <div id="links" className="mx-5 my-3 grid grid-cols-1 sm:flex">
                     <LinkBox
                         title="GitHub"
                         href="https://github.com/Hri7566"
@@ -66,7 +66,10 @@ const Home: NextPage = () => {
                 <h1 className="my-3 border-b border-t border-[#ffffff1a] bg-[#ffffff1a] px-5 py-4 text-3xl shadow-lg">
                     Projects
                 </h1>
-                <div id="projects" className="mx-5 my-3 grid grid-cols-3">
+                <div
+                    id="projects"
+                    className="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-3"
+                >
                     <LinkBox
                         title="mpp-user-archive"
                         href="https://github.com/Hri7566/mpp-user-archive"
