@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main
-                className="h-full min-h-[100dvh] bg-black bg-cover bg-fixed bg-center bg-no-repeat text-white backdrop-blur sm:w-full"
+                className="h-full min-h-[100lvh] bg-black bg-cover bg-fixed bg-center bg-no-repeat text-white backdrop-blur sm:w-full"
                 style={{
                     fontFamily: `"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif`,
                     backgroundImage: `url("/cat.jpg")`
