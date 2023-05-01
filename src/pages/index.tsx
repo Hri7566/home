@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                 <MainHeader />
 
                 <PageBreak>Links</PageBreak>
-                <div className="ml-auto mr-auto w-2/3 items-center">
+                <div className="sm:ml-auto sm:mr-auto sm:w-2/3 sm:items-center">
                     <div
                         id="links"
                         className="mx-5 my-3 grid grid-cols-1 items-center justify-evenly sm:flex"
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 </div>
 
                 <PageBreak>Projects</PageBreak>
-                <div className="ml-auto mr-auto w-2/3">
+                <div className="sm:ml-auto sm:mr-auto sm:w-2/3">
                     <div
                         id="projects"
                         className="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-2"
