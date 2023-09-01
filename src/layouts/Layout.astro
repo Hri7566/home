@@ -2,39 +2,44 @@
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Hri7566's homepage">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="logo.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Hri7566's homepage" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" href="logo.png" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body>
+        <slot />
+    </body><style is:global>
+        :root {
+            --accent: 136, 58, 234;
+            --accent-light: 224, 204, 250;
+            --accent-dark: 49, 10, 101;
+            --accent-gradient: linear-gradient(
+                45deg,
+                rgb(var(--accent)),
+                rgb(var(--accent-light)) 30%,
+                white 60%
+            );
+        }
 
-	html {
-		/* font-family: system-ui, sans-serif; */
-		font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-		background-size: 224px;
-		@apply bg-stone-950;
-	}
-</style>
+        html {
+            /* font-family: system-ui, sans-serif; */
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
+            background-size: 224px;
+            @apply bg-stone-950;
+        }
+    </style>
+</html>

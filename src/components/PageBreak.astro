@@ -1,11 +1,13 @@
 ---
 interface Props {
-	title: string;
+    title: string;
 }
 
-const { title } = Astro.props
+const { title } = Astro.props;
 ---
 
-<h1 class="my-3 border-b border-[#ffffff10] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm text-gray-50">
+<h1
+    class="my-3 border-b border-[#ffffff10] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm text-gray-50"
+>
     {title}
 </h1>
