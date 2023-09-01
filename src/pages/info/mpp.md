@@ -4,7 +4,9 @@ title: Multiplayer Piano
 logo: /128-piano.png
 ---
 
-Multiplayer Piano is like a home to me. I learned how to script and interact with the web there, and it feels like one of those corners of the internet that you just don't know why it feels satisfying to interact with.
+Multiplayer Piano is a site where you join a room, chat, and play music with other people.
+
+MPP is like a home to me. I learned how to script and interact with the web there, and it feels like one of those corners of the internet that you just don't know why it feels satisfying to interact with.
 
 Back in the day, it used to be full of life. Back when the main domain was still `multiplayerpiano.com` and not one of my friend's clones of the site, there were so many people messing with bots and scripts that would interact with the chat and the piano in ways that felt truly groundbreaking. There used to be a bot that could write letters on the piano, and that was amazing then.
 
