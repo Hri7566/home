@@ -1,0 +1,119 @@
+---
+import FrontView from "~/layouts/FrontView.astro";
+import PageBreak from "~/components/PageBreak.astro";
+import ContentBox from "~/components/ContentBox.astro";
+import LinkBox from "~/components/LinkBox.astro";
+---
+
+<FrontView title="About">
+    <PageBreak title="About" />
+    <ContentBox>
+        <p class="text-gray-300">
+            Hello! My username is Hri7566. I currently have no job and I am
+            struggling to survive as a hobbyist developer. I make websites and
+            miscellaneous apps and tools completely for fun and I have earned
+            just about nothing for my work. I like to use Next.js most of the
+            time, but I have recently taken a liking towards Astro. As a matter
+            of fact, this very site was migrated from Next to Astro!
+        </p>
+        <br />
+        <p class="text-gray-300">
+            If you would like to talk, you can contact me on Discord. You can
+            try my Gmail or Twitter, but I don't check those as often. I check
+            Discord just about hourly, so that's why I suggest it. Also, I tend
+            to reply to a lot of YouTube comments within a day or two.
+        </p>
+        <br />
+        <p class="text-gray-300">
+            I'm a major contributor (debatably) to MPP/MPPClone and have created
+            many scripts and projects centered around it. You can read more
+            about it <a
+                href="https://github.com/LapisHusky/mppclone"
+                class="text-sky-500 hover:text-sky-400 hover:underline transition-colors"
+                >here</a
+            >.
+        </p>
+    </ContentBox>
+
+    <PageBreak title="Accounts" />
+    <div class="mx-5 my-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+        <LinkBox title="GitHub" href="https://github.com/Hri7566">
+            Hri7566
+        </LinkBox>
+        <LinkBox title="𝕏" href="https://twitter.com/Hri7566">@Hri7566</LinkBox>
+        <LinkBox title="Discord">@hri7566</LinkBox>
+        <LinkBox title="GitLab" href="https://gitlab.com/Hri7566">
+            @Hri7566 | User ID: 2294970
+        </LinkBox>
+        <LinkBox
+            title="git.hri7566.info"
+            href="https://git.hri7566.info/Hri7566"
+        >
+            Hri7566
+        </LinkBox>
+        <LinkBox title="Gmail" href="mailto:hri7566@gmail.com">
+            hri7566@gmail.com
+        </LinkBox>
+        <LinkBox title="Odysee" href="https://odysee.com/@hri7566:6">
+            @hri7566
+        </LinkBox>
+        <LinkBox title="YouTube" href="https://youtube.com/hri7566">
+            @hri7566
+        </LinkBox>
+        <LinkBox title="MPPClone IDs">
+            ead940199c7d9717e5149919 a2516b4d88f22b45056f270b
+        </LinkBox>
+    </div>
+
+    <PageBreak title="FAQ" />
+    <ContentBox>
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: Why is your MPP server down?</strong
+        >
+        <p class="text-gray-300">A: It goes down a lot, it's old and buggy.</p>
+        <br />
+
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: What is your real name?</strong
+        >
+        <p class="text-gray-300">
+            A: That's a little personal... but you can call me Ethan.
+        </p>
+        <br />
+
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: What does your username mean?</strong
+        >
+        <p class="text-gray-300">A: I'm not really sure, it's older than me.</p>
+        <br />
+
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: What is that supposed to mean?</strong
+        >
+        <p class="text-gray-300">
+            A: I'm not the one who made the first account with that name, but I
+            knew the guy who did. He's not around anymore.
+        </p>
+        <br />
+
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: What does your username mean?</strong
+        >
+        <p class="text-gray-300">I'm not really sure, it's older than me.</p>
+        <br />
+
+        <strong class="text-gray-300 font-bold text-lg"
+            >Q: What is this "MPP" thing you keep talking about?</strong
+        >
+        <p class="text-gray-300">
+            It's a <a
+                href="https://mppclone.com"
+                class="text-sky-500 hover:text-sky-400 hover:underline transition-colors"
+                >website</a
+            > I made a lot of scripts for in the past. It's an online piano in
+            the corner of the internet that interesting people used to be in.
+        </p>
+    </ContentBox>
+
+    <div class="py-10"></div>
+</FrontView>
