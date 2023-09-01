@@ -1,6 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import Nav from "./Nav.astro";
+
+interface Props {
+    logo?: string;
+}
+
+const { logo } = Astro.props;
 ---
 
 <div
@@ -9,7 +15,7 @@ import Nav from "./Nav.astro";
 >
     <a href="/" class="float-left flex cursor-pointer items-end">
         <Image
-            src="logo.png"
+            src={logo || "/logo.png"}
             alt="Logo"
             width="64"
             height="64"
