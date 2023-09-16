@@ -1,8 +1,39 @@
 ---
+import Hamburger from "./Hamburger.astro";
 import NavLink from "./NavLink.astro";
 ---
 
-<div class="flex">
+<div class="hidden sm:flex">
     <NavLink title="Home" href="/" />
     <NavLink title="About" href="/about" />
+</div>
+
+<div class="flex sm:hidden">
+    <script>
+        window.hamburger = function () {
+            const navLinks = document.getElementById("nav-links-mobile");
+            if (!navLinks) return;
+            if (navLinks.classList.contains("hidden")) {
+                navLinks.classList.remove("hidden");
+            } else {
+                navLinks.classList.add("hidden");
+            }
+        };
+    </script>
+
+    <div onclick="
+    hamburger()
+    ">
+        <Hamburger />
+    </div>
+
+    <div
+        id="nav-links-mobile"
+        class="hidden transition-opacity right-5 top-14 absolute bg-[#ffffff10] px-8 rounded-xl shadow-md ring-1 ring-inset ring-[#ffffff10] backdrop-blur-xl"
+    >
+        <div class="flex flex-col">
+            <NavLink title="Home" href="/" />
+            <NavLink title="About" href="/about" />
+        </div>
+    </div>
 </div>
