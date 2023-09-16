@@ -1,23 +1,42 @@
 ---
 import { Image } from "astro:assets";
+import Nav from "./Nav.astro";
+
+interface Props {
+    logo?: string;
+}
+
+const { logo } = Astro.props;
 ---
 
 <div
     id="main-header"
-    class="backdrop-blur-sm sticky top-0 z-[100] h-24 p-3 border-b border-[#ffffff10] mx-auto w-full max-w-screen-xl shadow-lg"
+    class="backdrop-blur-sm sticky top-0 z-[100] h-[4.5rem] sm:h-24 p-3 border-b border-[#ffffff10] mx-auto w-full max-w-screen-xl shadow-lg"
 >
     <a href="/" class="float-left flex cursor-pointer items-end">
         <Image
-            src="logo.png"
+            class="hidden sm:flex"
+            src={logo || "/logo.png"}
             alt="Logo"
             width="64"
             height="64"
             style="image-rendering: pixelated;"
         />
+        <Image
+            class="flex sm:hidden"
+            src={logo || "/logo.png"}
+            alt="Logo"
+            width="48"
+            height="48"
+            style="image-rendering: pixelated;"
+        />
         <h1
-            class="text-5xl text-gray-50 transition-colors duration-300 ease-in-out hover:text-gray-300"
+            class="text-3xl md:text-5xl text-gray-50 transition-colors duration-300 ease-in-out hover:text-gray-300"
         >
             hri7566.info
         </h1>
+        <div class="float-right">
+            <Nav />
+        </div>
     </a>
 </div>
