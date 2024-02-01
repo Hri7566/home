@@ -7,8 +7,20 @@ import LinkBox from "~/components/LinkBox.astro";
 <Front title="Hri7566">
     <PageBreak title="Links" />
     <div class="sm:ml-auto sm:mr-auto lg:w-1/2 sm:items-center">
+        <div id="links" class="mx-auto my-3 grid grid-cols-1 items-center justify-evenly sm:flex sm:mx-5">
+            <LinkBox title="Gitea" href="https://git.hri7566.info" center />
+            <LinkBox title="Hri's MPP" href="https://mpp.hri7566.info" center />
+            <LinkBox title="Multiplayer Piano Wiki" href="https://wiki.hri7566.info" center />
+            <LinkBox title="XCL" href="https://xcl.hri7566.info" center />
+            <LinkBox title="MPP User Archive" href="https://archive.hri7566.info" center />
+            <LinkBox title="Neocities" href="https://hri7566.neocities.org" />
+        </div>
+    </div>
+
+    <PageBreak title="Socials" />
+    <div class="sm:ml-auto sm:mr-auto lg:w-1/2 sm:items-center">
         <div
-            id="links"
+            id="socials"
             class="mx-auto my-3 grid grid-cols-1 items-center justify-evenly sm:flex sm:mx-5"
         >
             <LinkBox
@@ -24,7 +36,7 @@ import LinkBox from "~/components/LinkBox.astro";
                 color="#6e5ac0"
             />
             <LinkBox
-                title="XCL"
+                title="Gitea"
                 href="https://git.hri7566.info/Hri7566"
                 center
                 color="#ff9900"
@@ -50,7 +62,7 @@ import LinkBox from "~/components/LinkBox.astro";
         </div>
     </div>
 
-    <PageBreak title="Projects" />
+    <PageBreak title="My Projects" />
     <div class="sm:ml-auto sm:mr-auto sm:w-3/4">
         <div
             id="projects"
@@ -61,9 +73,9 @@ import LinkBox from "~/components/LinkBox.astro";
                 ComputerCraft.
             </LinkBox>
             <LinkBox title="XCL" href="https://xcl.hri7566.info">
-                My science and engineering company based around the <a
+                My in-game science and engineering company based around the <a
                     href="https://sc3.io">SwitchCraft 3</a
-                > modded Minecraft server.
+                > Minecraft server. Probably not a real company yet.
             </LinkBox>
             <LinkBox
                 title="BadPaint"
@@ -77,7 +89,8 @@ import LinkBox from "~/components/LinkBox.astro";
                 href="https://singleplayerpiano.com"
             >
                 Tired of using Multiplayer Piano only to find other people are
-                frustrating you?
+                frustrating you? Introducing the same website but not connected
+                to a server.
             </LinkBox>
             <LinkBox
                 title="Skyrim Mouse Locker"
@@ -97,11 +110,10 @@ import LinkBox from "~/components/LinkBox.astro";
                 title="mpp-user-archive"
                 href="https://github.com/Hri7566/mpp-user-archive"
             >
-                Multiplayer Piano database service monorepo. This project took
-                over a month to make.
+                Multiplayer Piano user info database service monorepo
             </LinkBox>
-            <LinkBox title="Cosmic" href="https://github.com/Hri7566/cosmic">
-                Chat bot for Discord and MPP. Lots of baking involved.
+            <LinkBox title="SuperCosmic" href="https://git.hri7566.info/Hri7566/supercosmic">
+                Chat bot for Discord and MPP. There used to be baking in the old version, it might come back some day.
             </LinkBox>
             <LinkBox title="HMPP" href="https://mpp.hri7566.info">
                 A clone of Multiplayer Piano with a completely original backend
