@@ -6,8 +6,13 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<h1
-    class="my-3 border-b border-[#ffffff10] px-5 py-4 text-3xl shadow-lg backdrop-blur-sm text-gray-50"
->
-    {title}
-</h1>
+<div class="lg:w-5/6 mx-auto my-3 border-b border-[#ffffff10] py-4 shadow-lg backdrop-blur-sm text-gray-50">
+    <div class="px-4 lg:w-1/2">
+        <h1
+            class="text-3xl"
+            style="text-shadow: -1px 1px 0px #888, -2px 2px 0px #666;"
+        >
+            {title}
+        </h1>
+    </div>
+</div>
