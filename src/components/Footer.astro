@@ -13,5 +13,37 @@ const currentYear = new Date().getUTCFullYear();
             class="float-right text-sky-500 hover:text-sky-400 hover:underline transition-colors hidden sm:flex"
             href="https://www.buymeacoffee.com/hri7566">☕ Buy me a coffee!</a
         >
+        <button id="disease" class="float-right px-10 text-sky-500 hover:text-sky-400 hover:underline transition-colors hidden sm:flex">get disease</button>
+        <script>
+            function disease() {
+                console.log("you got disease");
+                document.querySelector("div").style.filter = "invert(1)";
+                document.querySelector("#projects").style.transform = "rotate(90deg)";
+                document.querySelectorAll("h1").forEach(ele => ele.style.transform = "rotate(180deg)");
+
+                function animate() {
+                    if (Math.random() < 0.006125) {
+                        document.querySelectorAll("h1").forEach(ele => ele.style.transform = "rotate(0deg)");
+                    }
+
+                    document.querySelectorAll("h3").forEach(ele => {
+                        if (Math.random() < 0.06125) {
+                            ele.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+                        }
+                    });
+
+                    requestAnimationFrame(() => {
+                        animate();
+                    });
+                }
+
+                animate();
+
+                document.getElementById("disease").removeEventListener("click", disease);
+                document.getElementById("disease").remove();
+            }
+
+            document.getElementById("disease").addEventListener("click", disease);
+        </script>
     </div>
 </footer>
