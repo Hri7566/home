@@ -7,12 +7,12 @@ import LinkBox from "~/components/LinkBox.astro";
     <PageBreak title="Links" />
     <div class="sm:ml-auto sm:mr-auto lg:w-1/2 sm:items-center">
         <div id="links" class="mx-auto my-3 grid grid-cols-1 items-center justify-evenly sm:flex sm:mx-5">
-            <LinkBox title="Gitea" href="https://git.hri7566.info" center />
-            <LinkBox title="Hri's MPP" href="https://mpp.hri7566.info" center />
+            <LinkBox title="My Gitea Server" href="https://git.hri7566.info" center />
+            <LinkBox title="My MPP Server" href="https://mpp.hri7566.info" center />
             <LinkBox title="Multiplayer Piano Wiki" href="https://wiki.hri7566.info" center />
             <LinkBox title="XCL" href="https://xcl.hri7566.info" center />
             { /* <LinkBox title="MPP User Archive" href="https://archive.hri7566.info" center /> */ }
-            <LinkBox title="Neocities" href="https://hri7566.neocities.org" />
+            <LinkBox title="My Dumb Neocities" href="https://hri7566.neocities.org" />
         </div>
     </div>
 
@@ -58,12 +58,14 @@ import LinkBox from "~/components/LinkBox.astro";
                 center
                 color="#1a8cd8"
             />
+            <!--
             <LinkBox
                 title="Odysee"
                 href="https://odysee.com/@hri7566:6"
                 center
                 color="#a60a43"
             />
+            -->
         </div>
     </div>
 
@@ -73,6 +75,9 @@ import LinkBox from "~/components/LinkBox.astro";
             id="projects"
             class="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-2 xl:grid-cols-4"
         >
+            <LinkBox title="mpp-server-dev2" href="https://git.hri7566.info/Hri7566/mpp-server-dev2">
+                A completely rewritten MPP server built from the ground up.
+            </LinkBox>
             <LinkBox title="cc-ts" href="https://github.com/Hri7566/cc-ts">
                 A template for using TypeScript and roblox-ts with
                 ComputerCraft.
@@ -80,58 +85,33 @@ import LinkBox from "~/components/LinkBox.astro";
             <LinkBox title="XCL" href="https://xcl.hri7566.info">
                 My in-game science and engineering company based around the <a
                     href="https://sc3.io">SwitchCraft 3</a
-                > Minecraft server. Probably not a real company yet.
+                > Minecraft server. Not a real company.
             </LinkBox>
             <LinkBox
                 title="BadPaint"
                 href="https://github.com/Hri7566/BadPaint"
             >
                 The worst paint program I have ever made. Coincidentally, it's
-                also the only paint program I have ever made.
+                also the only paint program I have ever made, so it's also the best.
             </LinkBox>
             <LinkBox
                 title="Singleplayer Piano"
                 href="https://singleplayerpiano.com"
             >
-                Tired of using Multiplayer Piano only to find other people are
-                frustrating you? Introducing the same website but not connected
-                to a server.
+                Tired of other people bothering you on Multiplayer Piano?
             </LinkBox>
             <LinkBox
                 title="Skyrim Mouse Locker"
                 href="https://github.com/Hri7566/SkyrimMouseLocker"
             >
-                I finally felt fed up with the stupid Skyrim multi-monitor
-                cursor bug so I did the most simple thing I could do to mitigate
-                it.
+                I went out of my way and fixed a stupid Skyrim cursor bug with an external program.
             </LinkBox>
             <LinkBox
                 title="mpp-hats"
-                href="https://github.com/the-dev-channel/mpp-hats"
+                href="https://github.com/Hri7566/hats"
             >
-                Custom hats script for MPP. Hat textures made by yours truly.
+                Wearable hats for MultiplayerPiano.net.
             </LinkBox>
-            {
-                /* <LinkBox
-                    title="mpp-user-archive"
-                    href="https://github.com/Hri7566/mpp-user-archive"
-                >
-                    Multiplayer Piano user info database service monorepo
-                </LinkBox> */
-            }
-            <LinkBox title="SuperCosmic" href="https://git.hri7566.info/Hri7566/supercosmic">
-                Chat bot for Discord and MPP. There used to be baking in the old version, it might come back some day.
-            </LinkBox>
-            <LinkBox title="HMPP" href="https://mpp.hri7566.info">
-                A clone of Multiplayer Piano with a completely original backend
-                server with a fresh style.
-            </LinkBox>
-            {
-                /* <LinkBox title="Khorne Bot" color="#900000">
-				Discord bot in collaboration with Khorne. Closed
-				source and currently under development.
-			</LinkBox> */
-            }
             <LinkBox title="MPP.net" href="https://github.com/Hri7566/mppclone">
                 I made major contributions to this site's development over the
                 years, even if it wasn't through code.
