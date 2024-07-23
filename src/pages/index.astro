@@ -8,7 +8,8 @@ import LinkBox from "~/components/LinkBox.astro";
     <div class="sm:ml-auto sm:mr-auto lg:w-1/2 sm:items-center">
         <div id="links" class="mx-auto my-3 grid grid-cols-1 items-center justify-evenly sm:flex sm:mx-5">
             <LinkBox title="My Gitea Server" href="https://git.hri7566.info" center />
-            <LinkBox title="My MPP Server" href="https://mpp.hri7566.info" center />
+            <LinkBox title="My Old MPP Server" href="https://mpp.hri7566.info" center />
+            <LinkBox title="My Other MPP Server" href="">
             <LinkBox title="Multiplayer Piano Wiki" href="https://wiki.hri7566.info" center />
             <LinkBox title="XCL" href="https://xcl.hri7566.info" center />
             { /* <LinkBox title="MPP User Archive" href="https://archive.hri7566.info" center /> */ }
@@ -76,16 +77,40 @@ import LinkBox from "~/components/LinkBox.astro";
             class="mx-5 my-3 grid grid-cols-1 pb-20 sm:grid-cols-2 xl:grid-cols-4"
         >
             <LinkBox title="mpp-server-dev2" href="https://git.hri7566.info/Hri7566/mpp-server-dev2">
-                A completely rewritten MPP server built from the ground up.
+                A completely rewritten MPP server built from the ground up. This is
+                going to be the new server for MPP.dev, a separate MPP server that
+                I run for 
+            </LinkBox>
+            <LinkBox title="MPP.net" href="https://multiplayerpiano.net">
+                As a frequent user, contributor, and, as of recently, an
+                administrator, I have made good contributions to this site's
+                development over the years, not just including code
+                contributions and bug fixes, but also content creation and
+                open-source packages for the community.
+            </LinkBox>
+            <LinkBox
+                title="mpp-hats"
+                href="https://github.com/Hri7566/hats"
+            >
+                Wearable hats for MultiplayerPiano.net.
+            </LinkBox>
+            <LinkBox
+                title="Singleplayer Piano"
+                href="https://singleplayerpiano.com"
+            >
+                Tired of other people bothering you on Multiplayer Piano? This
+                is probably my biggest waste of time.
             </LinkBox>
             <LinkBox title="cc-ts" href="https://github.com/Hri7566/cc-ts">
                 A template for using TypeScript and roblox-ts with
-                ComputerCraft.
+                ComputerCraft. This speeds up development time by a lot,
+                if you're using TypeScript for everything like me.
             </LinkBox>
             <LinkBox title="XCL" href="https://xcl.hri7566.info">
                 My in-game science and engineering company based around the <a
                     href="https://sc3.io">SwitchCraft 3</a
-                > Minecraft server. Not a real company.
+                > Minecraft server. This is not a real company, only
+                a group/hobby project that exists in the game.
             </LinkBox>
             <LinkBox
                 title="BadPaint"
@@ -95,26 +120,10 @@ import LinkBox from "~/components/LinkBox.astro";
                 also the only paint program I have ever made, so it's also the best.
             </LinkBox>
             <LinkBox
-                title="Singleplayer Piano"
-                href="https://singleplayerpiano.com"
-            >
-                Tired of other people bothering you on Multiplayer Piano?
-            </LinkBox>
-            <LinkBox
                 title="Skyrim Mouse Locker"
                 href="https://github.com/Hri7566/SkyrimMouseLocker"
             >
                 I went out of my way and fixed a stupid Skyrim cursor bug with an external program.
-            </LinkBox>
-            <LinkBox
-                title="mpp-hats"
-                href="https://github.com/Hri7566/hats"
-            >
-                Wearable hats for MultiplayerPiano.net.
-            </LinkBox>
-            <LinkBox title="MPP.net" href="https://github.com/Hri7566/mppclone">
-                I made major contributions to this site's development over the
-                years, even if it wasn't through code.
             </LinkBox>
             {
                 /* <LinkBox
