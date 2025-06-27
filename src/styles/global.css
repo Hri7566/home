@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
+}
+
+html {
+    /* font-family: system-ui, sans-serif; */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-size: 224px;
+    @apply bg-stone-950;
+}
+
+code {
+    @apply rounded-md bg-[#ffffff05] px-1 py-1 shadow-md ring-1 ring-inset ring-[#ffffff08] text-gray-400;
+}
+
+a {
+    @apply text-sky-600 transition-colors duration-300 ease-in-out hover:text-sky-400 hover:underline;
+}
