@@ -1,0 +1,130 @@
+---
+import Front from "~/layouts/FrontView.astro";
+import PageBreak from "~/components/PageBreak.astro";
+import Project from "~/components/Project.astro";
+import { Image } from "astro:assets";
+---
+
+<Front title="hello">
+    <div class="text-lg my-3 text-gray-50 mx-3">
+        <p class="max-w-150">
+            I'm hri7566 and I develop websites and greater computer experiences
+            for daring adventurers of the internet. I focus on small web and
+            video games, but I have ambitious ideas for larger projects.
+        </p>
+
+        <PageBreak>hello</PageBreak>
+        <p class="max-w-200">
+            As stated, I'm a web-ish developer, but I dabble in other tech, too,
+            mostly related to gaming or simple graphics. I also make my own
+            music, but I only have 2 listeners.
+        </p>
+        <p>
+            (<a href="https://hri7566.bandcamp.com/"
+                >https://hri7566.bandcamp.com/</a
+            >)
+        </p>
+        <PageBreak>note on music</PageBreak>
+        <p class="max-w-200">
+            I made two albums so far and I'm working on a third.. They're not
+            amazing or anything, but you can check them out on that Bandcamp
+            page listed above, on most music streaming services, or by clicking
+            the images below. I also make music for my game-related projects and
+            have a lot of it going unused as I haven't released a game yet.
+        </p>
+        <br />
+        <div class="flex">
+            <a href="https://bandcamp.hri7566.info/album/space-tunes">
+                <Image
+                    class="sm:flex m-1"
+                    src="/st.png"
+                    alt="Space Tunes Album Cover"
+                    width="128"
+                    height="128"
+                />
+            </a>
+            <a
+                href="https://bandcamp.hri7566.info/album/space-tunes-2-galactic-melodies"
+            >
+                <Image
+                    class="sm:flex m-1"
+                    src="/st2.png"
+                    alt="Space Tunes 2: Galactic Melodies Album Cover"
+                    width="128"
+                    height="128"
+                />
+            </a>
+            <a href="https://www.youtube.com/watch?v=IG2LB77OUmM">
+                <Image
+                    class="sm:flex m-1"
+                    src="/ruben.png"
+                    alt="Ceasario Desistario Demo LP Album Cover"
+                    width="128"
+                    height="128"
+                />
+            </a>
+        </div>
+        <PageBreak>computer stuff</PageBreak>
+        <p class="max-w-200">
+            For development at home, I have a PC I use for both gaming on
+            Windows and software development on Arch Linux as well as my older
+            secondary PC running Arch that mainly hosts files and random server
+            stuff.
+        </p>
+        <br />
+        <p class="max-w-200">
+            If I'm anywhere else in the world that isn't my desk, I have a
+            Macbook Pro M4 Max 36GB. Not the most expensive model that's
+            currently available, but it runs Cyberpunk, so that's a plus.
+        </p>
+        <br />
+        <p>Main PC Specs:</p>
+        <ul class="list-disc pl-5">
+            <li>Motherboard: X670E PG Lightning</li>
+            <li>CPU: AMD Ryzen 7 7700X</li>
+            <li>RAM: 32 GB some kind of corsair 16 GB sticks, fast enough</li>
+            <li>GPU: AMD Radeon RX 7900 GRE</li>
+            <li>Storage: two of some kind of WD Black 2 TB NVMe M.2</li>
+            <li>Linux DE: KDE Plasma Wayland</li>
+        </ul>
+        <br />
+        <p>Secondary PC Specs:</p>
+        <ul class="list-disc pl-5">
+            <li>Motherboard: Gigabyte B450M DS3H</li>
+            <li>CPU: AMD Ryzen 5 1600</li>
+            <li>
+                RAM: 16 GB some kind of corsair 8 GB sticks, not fast enough
+            </li>
+            <li>GPU: MSI brand GTX 1050 Ti</li>
+            <li>Storage: random SATA SSDs and an old 1 TB WD HDD</li>
+            <li>Linux DE: nothing works for some reason</li>
+        </ul>
+        <br />
+        <p>Software:</p>
+        <ul class="list-disc pl-5">
+            <li>Code editor: Neovim and sometimes Zed</li>
+            <li>Music DAW: both Ableton Live 12 and Logic Pro together</li>
+        </ul>
+        <br />
+        <p>Other things in my study:</p>
+        <ul class="list-disc pl-5">
+            <li>2019 iMac with a dying drive</li>
+            <li>2012 iMac in fully working condition except old OS</li>
+            <li>parts from a dead 2002(?) iMac G4</li>
+            <li>another iMac G4 that actually works</li>
+            <li>Raspberry Pi 4B that isn't doing anything</li>
+            <li>
+                Nintendo Wii (second one, my first one was dismantled and i
+                can't put it back together)
+            </li>
+            <li>Nintendo Wii U (plays Pikmin 3)</li>
+            <li>Nintendo Switch (also plays Pikmin 3)</li>
+            <li>Nintendo Switch 2 (also plays Pikmin 3)</li>
+            <li>Analogue 3D (black) (new!)</li>
+            <li>Meta Quest 3</li>
+            <li>Nintendo 3DS (purple)</li>
+            <li>Nintendo DSi (light blue)</li>
+            <li>Nintendo Entertainment System (the frontloading kind)</li>
+        </ul>
+    </div>
+</Front>

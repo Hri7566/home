@@ -4,14 +4,17 @@ import Layout from "./Layout.astro";
 import Header from "~/components/MainHeader.astro";
 
 interface Props {
-    title: string;
+    title?: string;
     logo?: string;
 }
 
 const { title, logo } = Astro.props;
+
+const mainTitle = "hri7566";
+const fullTitle = title ? mainTitle + " | " + title : mainTitle;
 ---
 
-<Layout title={title}>
+<Layout title={fullTitle}>
     <div id="main" class="sm:w-full">
         <Header logo={logo} />
         <div id="container" class="w-full max-w-screen-xl mx-auto">

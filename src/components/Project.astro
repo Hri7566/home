@@ -2,9 +2,9 @@
 const { title, url } = Astro.props;
 ---
 
-<div class="p-3">
+<div class="p-3 max-w-150">
     <a href={url}><h2 class="text-xl">{title}</h2></a>
-    <p class="">
+    <p>
         <slot />
     </p>
 </div>

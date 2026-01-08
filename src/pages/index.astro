@@ -4,31 +4,48 @@ import PageBreak from "~/components/PageBreak.astro";
 import Project from "~/components/Project.astro";
 ---
 
-<Front title="hri7566">
+<Front>
     <div class="text-lg my-3 text-gray-50 mx-3">
-        <p>
-            I'm hri7566 (or Ethan) and I develop websites and greater computer
-            experiences for daring adventurers of the internet. Mainly, I
-            specialize in the imagination-driven side of projects, but I also
-            invent logical solutions from time to time.
+        <p class="max-w-150">
+            I'm hri7566 and I develop websites and greater computer experiences
+            for daring adventurers of the internet. I focus on small web and
+            video games, but I have ambitious ideas for larger projects.
         </p>
         <PageBreak>Projects</PageBreak>
-        <Project title="Fishing Bot" url="https://fishing.hri7566.info">
-            A text-based fishing game for bored people.
-        </Project>
-        <Project title="FB2" url="https://fb.hri7566.info">
-            A strategy-based team-centric modded Minecraft server.
-        </Project>
-        <Project
-            title="Skyrim Mouse Locker"
-            url="https://github.com/Hri7566/SkyrimMouseLocker"
-        >
-            A utility that constrains the cursor to one monitor while playing
-            Skyrim.
-        </Project>
-        <Project title="BadPaint" url="https://github.com/Hri7566/BadPaint">
-            A terrible paint program made as a final project for CS50, a CS
-            course at Harvard University.
-        </Project>
+        <div id="projects" class="flex-col columns-2">
+            <Project
+                title="MuliplayerPiano.net"
+                url="https://multiplayerpiano.net"
+            >
+                A website that I write code for sometimes. I help maintain the
+                server, too.
+            </Project>
+            <Project title="MPP.dev" url="https://www.multiplayerpiano.dev">
+                Just in case one Multiplayer Piano site wasn't enough, I have my
+                own personal fork.
+            </Project>
+            <Project
+                title="Untitled Frog Jumping Game"
+                url="https://fs.hri7566.info/frog-builds/alpha.2.zip"
+            >
+                A game about a frog that jumps. My brother calls it "Bennett
+                Froggy"
+            </Project>
+            <Project title="Fishing Bot" url="https://fishing.hri7566.info">
+                A text-based fishing game/chat bot for bored people.
+            </Project>
+            <Project
+                title="Skyrim Mouse Locker"
+                url="https://github.com/Hri7566/SkyrimMouseLocker"
+            >
+                A utility that constrains the cursor to one monitor while
+                playing Skyrim to fix that one annoying bug.
+            </Project>
+            <Project title="BadPaint" url="https://github.com/Hri7566/BadPaint">
+                A terrible paint program made as a final project for CS50, a
+                Computer Science course at Harvard University available on the
+                internet. My friends like it for some reason.
+            </Project>
+        </div>
     </div>
 </Front>
