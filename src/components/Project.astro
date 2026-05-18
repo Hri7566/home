@@ -1,5 +1,11 @@
 ---
-const { title, url } = Astro.props;
+const { title, url, tags } = Astro.props;
+
+const tagColors = {
+    "TypeScript": "#2d79c780",
+    "JavaScript": "#f7df1e80",
+    "Godot": "#468cbf80"
+}
 ---
 
 <div class="p-3 max-w-150">
@@ -7,4 +13,11 @@ const { title, url } = Astro.props;
     <p>
         <slot />
     </p>
+    {tags ? tags.map(t => {
+        if (!tagColors[t]) {
+            return <span class="border-1 rounded-sm px-1 mx-1 border-white/20 text-white/20 bg-white/10 my-1 text-sm">{t}</span>;
+        } else {
+            return <span style={"color: " + tagColors[t] + ";"} class="border-1 rounded-sm px-1 mx-1 border-white/20 text-white/20 bg-white/10 my-1 text-sm">{t}</span>
+        }
+    }) : ""}
 </div>

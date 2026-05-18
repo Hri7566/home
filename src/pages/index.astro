@@ -6,42 +6,68 @@ import Project from "~/components/Project.astro";
 
 <Front>
     <div class="text-lg my-3 text-gray-50 mx-3">
-        <p class="max-w-150">
-            I'm hri7566 and I develop websites and greater computer experiences
-            for daring adventurers of the internet. I focus on small web and
-            video games, but I have ambitious ideas for larger projects.
-        </p>
+        <div class="grid grid-cols-2 gap-6">
+            <p class="max-w-140">
+                I'm Ethan. I go by hri7566 on the net and I develop cool websites
+                and greater computer experiences for daring adventurers of the
+                internet. I focus on various-scale web projects and video games
+                from small bots (similar to those you would see on Discord) to
+                real-time infrastructure.
+            </p>
+            <p>
+                I'm also growing as a musician and sound engineer. I have two albums
+                out with a third on its way. I'm getting into digital art so I can
+                create my own assets for my games, starting with characters. So far
+                I am proficient with pixel art and chiptune sounds.
+            </p>
+        </div>
         <PageBreak>Projects</PageBreak>
-        <div id="projects" class="flex-col columns-2">
+        <div id="projects" class="grid grid-cols-3 gap-6">
             <Project
-                title="MuliplayerPiano.net"
+                title="MultiplayerPiano.net"
                 url="https://multiplayerpiano.net"
+                tags={["JavaScript", "WebSockets"]}
             >
-                A website that I write code for sometimes. I help maintain the
-                server, too.
+                A real-time WebSocket-based site where users can play piano with
+                each other. Made with love by my friends for thousands of unique
+                visitors.
             </Project>
-            <Project title="MPP.dev" url="https://www.multiplayerpiano.dev">
-                Just in case one Multiplayer Piano site wasn't enough, I have my
-                own personal fork.
+            <Project title="Untitled Frog Game" tags={["Godot", "Music", "Art"]}>
+                A game about a frog that wants to find Santa on the Moon. My brother calls it "Bennett Froggy", to give you an idea of what it's like. Currently in development.
             </Project>
-            <Project
-                title="Untitled Frog Jumping Game"
-                url="https://fs.hri7566.info/frog-builds/alpha.2.zip"
-            >
-                A game about a frog that jumps. My brother calls it "Bennett
-                Froggy"
+            <Project title="Wilson's Law" tags={["Godot", "Music", "Art"]}>
+                My magnum opus action RPG. Secretly in development since 2021.
             </Project>
-            <Project title="Fishing Bot" url="https://fishing.hri7566.info">
-                A text-based fishing game/chat bot for bored people.
+            <Project title="Ceasario Desistario" url="https://www.youtube.com/watch?v=IG2LB77OUmM" tags={["Godot", "Music", "Art"]}>
+                A platformer with a custom component-based ability system. Development paused, but the soundtrack lives on.
+            </Project>
+            <Project title="MPP Hats" url="https://hats.hri7566.info" tags={["TypeScript", "Browser", "Art"]}>
+                A script for Multiplayer Piano that adds little hats to your name. Everyone else with the script can see it, too.
+            </Project>
+            <Project title="MPP.dev" url="https://www.multiplayerpiano.dev" tags={["TypeScript", "WebSockets", "Bun", "Prisma", "JWT"]}>
+                A version of Multiplayer Piano for developers to test their chat
+                bots and make pull requests and experimental changes to the
+                website. Fully open source and under the GPL license.
+            </Project>
+            <Project title="Fishing Bot" url="https://fishing.hri7566.info" tags={["TypeScript", "HTTP", "Microservices"]}>
+                The Fishing Bot is a text-based fishing simulator where you can
+                fish, eat, and throw various objects. It is designed as a
+                multiplayer experience for people who enjoy text-based games or
+                just want to mess with their friends. 
+            </Project>
+            <Project title="mpp-client-net" url="https://github.com/Hri7566/mpp-client-net" tags={["TypeScript", "WebSockets"]}>
+                The official bot client for MultiplayerPiano.net with various
+                changes for quality of life.
             </Project>
             <Project
                 title="Skyrim Mouse Locker"
                 url="https://github.com/Hri7566/SkyrimMouseLocker"
+                tags={["C++"]}
             >
                 A utility that constrains the cursor to one monitor while
                 playing Skyrim to fix that one annoying bug.
             </Project>
-            <Project title="BadPaint" url="https://github.com/Hri7566/BadPaint">
+            <Project title="BadPaint" url="https://github.com/Hri7566/BadPaint" tags={["C#"]}>
                 A terrible paint program made as a final project for CS50, a
                 Computer Science course at Harvard University available on the
                 internet. My friends like it for some reason.
